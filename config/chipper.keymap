@@ -9,12 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-// defines readable layer index
-#define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define NAVI    3
-#define ADJS    4
 
 / {
         
