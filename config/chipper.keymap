@@ -68,7 +68,7 @@
 &kp TILDE         &kp EXCL  &kp AT     &kp HASH   &kp DLLR        &kp PRCNT           &kp CARET          &kp AMPS         &kp KP_MULTIPLY  &kp LPAR        &kp RPAR   &kp BSPC
 &mt LCTRL ESCAPE  &trans    &kp GRAVE  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BACKSLASH    &kp MINUS       &kp EQUAL  &kp PIPE
 &kp LSHFT         &trans    &trans     &trans     &trans          &trans              &kp EQUAL          &trans           &trans           &kp UNDERSCORE  &kp PLUS   &kp RIGHT_SHIFT
-                                       &kp LGUI   &trans          &to 3               &mt LCTRL SPACE    &trans           &kp RALT
+                                       &kp LGUI   &trans          &mo 3               &mt LCTRL SPACE    &trans           &kp RALT
             >;
         };
 
@@ -77,7 +77,7 @@
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7                &kp F8  &kp F9  &kp F10       &kp F11       &kp F12
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_BRIGHTNESS_INC  &trans  &trans  &trans        &trans        &sys_reset
 &trans      &trans        &trans        &trans        &trans        &trans          &kp C_BRIGHTNESS_DEC  &trans  &trans  &out OUT_TOG  &out OUT_BLE  &bt BT_CLR_ALL
-                                        &trans        &trans        &trans          &trans                &trans  &trans
+                                        &trans        &trans        &trans          &trans                &to 0   &trans
             >;
         };
     };
