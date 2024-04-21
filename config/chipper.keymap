@@ -17,6 +17,30 @@
 		zmk,matrix_transform = &default_transform;
 	};
 
+    combos {
+        compatible = "zmk,combos";
+
+        delete {
+            bindings = <&kp DEL>;
+            key-positions = <15 16>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <26 27>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <27 28>;
+        };
+
+        cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <26 28>;
+        };
+    };
+
        keymap {
         compatible = "zmk,keymap";
 
