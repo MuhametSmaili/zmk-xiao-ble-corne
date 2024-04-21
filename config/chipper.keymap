@@ -9,6 +9,12 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+
+   chosen {
+		zmk,kscan = &kscan0;
+		zmk,matrix_transform = &default_transform;
+	};
+
     combos {
         compatible = "zmk,combos";
 
