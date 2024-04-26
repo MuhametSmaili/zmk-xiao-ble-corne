@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -60,10 +61,10 @@
         lower_layer {
             label = "Lower";
             bindings = <
-&kp TAB           &kp N1           &kp N2  &kp N3        &kp N4          &kp N5       &kp N6              &kp N7       &kp N8     &kp N9     &kp N0            &kp BSPC
-&mt LCTRL ESCAPE  &kp PRINTSCREEN  &trans  &trans        &trans          &trans       &kp LEFT            &kp DOWN     &kp UP     &kp RIGHT  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP
-&kp LSHFT         &trans           &trans  &kp C_NEXT    &kp PAGE_DOWN   &kp END      &kp HOME            &kp PAGE_UP  &kp COMMA  &kp DOT    &kp K_MUTE        &mt LSHFT C_VOL_DN
-                                           &kp LEFT_ALT  &mt LGUI SPACE  &kp LCTRL    &mt LEFT_GUI ENTER  &trans       &kp RALT
+&kp TAB           &kp N1           &kp N2   &kp N3        &kp N4          &kp N5       &kp N6              &kp N7       &kp N8     &kp N9     &kp N0            &kp BSPC
+&mt LCTRL ESCAPE  &kp PRINTSCREEN  &kp F14  &trans        &trans          &trans       &kp LEFT            &kp DOWN     &kp UP     &kp RIGHT  &kp K_PLAY_PAUSE  &kp C_VOLUME_UP
+&kp LSHFT         &trans           &trans   &kp C_NEXT    &kp PAGE_DOWN   &kp END      &kp HOME            &kp PAGE_UP  &kp COMMA  &kp DOT    &kp K_MUTE        &mt LSHFT C_VOL_DN
+                                            &kp LEFT_ALT  &mt LGUI SPACE  &kp LCTRL    &mt LEFT_GUI ENTER  &trans       &kp RALT
             >;
         };
 
@@ -72,7 +73,7 @@
             bindings = <
 &kp TILDE         &kp EXCL  &kp AT     &kp HASH   &kp DLLR        &kp PRCNT           &kp CARET          &kp AMPS         &kp KP_MULTIPLY  &kp LPAR        &kp RPAR   &kp BSPC
 &mt LCTRL ESCAPE  &trans    &kp GRAVE  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BACKSLASH    &kp MINUS       &kp EQUAL  &kp PIPE
-&kp LSHFT         &trans    &trans     &trans     &trans          &trans              &kp EQUAL          &trans           &trans           &kp UNDERSCORE  &kp PLUS   &kp RIGHT_SHIFT
+&kp LSHFT         &trans    &trans     &mkp MB5   &mkp MCLK       &mkp LCLK           &mkp RCLK          &mkp MCLK        &mkp MB4         &kp UNDERSCORE  &kp PLUS   &kp RIGHT_SHIFT
                                        &kp LALT   &trans          &mo 3               &mt RGUI ENTER     &kp LCTRL        &kp RALT
             >;
         };
