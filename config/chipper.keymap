@@ -16,6 +16,20 @@
         zmk,matrix_transform = &default_transform;
     };
 
+    behaviors {
+      weak: weak {
+            compatible = "zmk,behavior-hold-tap";
+            label = "WEAK";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <230>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -52,7 +66,7 @@
             label = "Base";
             bindings = <
 &kp TAB           &kp Q           &kp W  &kp E     &kp R        &kp T              &kp Y               &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL ESCAPE  &mt LEFT_GUI A  &kp S  &kp D     &kp F        &kp G              &kp H               &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&weak LCTRL ESCAPE  &weak LEFT_GUI A  &kp S  &kp D     &kp F        &kp G              &kp H               &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z           &kp X  &kp C     &kp V        &kp B              &kp N               &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT ENTER
                                          &kp LALT  &lt 2 SPACE  &mt LCTRL ENTER    &mt LEFT_GUI ENTER  &mo 1  &kp RALT
             >;
@@ -73,7 +87,7 @@
             bindings = <
 &kp TILDE         &kp EXCL      &kp AT     &kp HASH   &kp DLLR        &kp PRCNT           &kp CARET          &kp AMPS         &kp KP_MULTIPLY  &kp LPAR        &kp RPAR   &kp BSPC
 &mt LCTRL ESCAPE  &kp LEFT_GUI  &kp GRAVE  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BACKSLASH    &kp MINUS       &kp EQUAL  &kp PIPE
-&kp LSHFT         &trans        &trans     &mkp MB5   &mkp MCLK       &mkp LCLK           &mkp RCLK          &mkp MCLK        &mkp MB4         &kp UNDERSCORE  &kp PLUS   &kp RIGHT_SHIFT
+&kp LSHFT         &trans        &kp SPACE     &mkp MB5   &mkp MCLK       &mkp LCLK           &mkp RCLK          &mkp MCLK        &mkp MB4         &kp UNDERSCORE  &kp PLUS   &kp RIGHT_SHIFT
                                            &kp LALT   &trans          &mo 3               &mt RGUI ENTER     &kp LCTRL        &kp RALT
             >;
         };
