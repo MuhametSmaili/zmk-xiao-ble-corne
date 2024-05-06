@@ -10,6 +10,23 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
+
+/*
+ * Layer Tap Settings
+ */
+&lt {
+    // Increase layer tap time
+    tapping-term-ms = <300>;
+
+    // Quickly tap-tap-holding the lt button will repeat the tap behavior
+    // For example enter-enter-hold, will output multiple enter while you
+    // keep holding the key.
+    // But holding enter without double tapping, will activate the layer.
+     quick-tap-ms = <200>;
+
+     flavor = "balanced";
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
