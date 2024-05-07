@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define COMBO_TIMEOUT 35
-#define COMBO_PRIOR_IDLE 100
+#define COMBO_TIMEOUT 10
+#define COMBO_PRIOR_IDLE 80
 
 
 // adding double tap for layer tap, which makes possible to hold the $kp
