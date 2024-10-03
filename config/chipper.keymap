@@ -16,8 +16,8 @@
 // adding double tap for layer tap, which makes possible to hold the $kp
 
 &lt {
-    tapping-term-ms = <200>;
-    quick-tap-ms = <175>;
+    tapping-term-ms = <250>;
+    quick-tap-ms = <180>;
     flavor = "balanced";
 };
 
