@@ -48,7 +48,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
@@ -64,12 +64,12 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
-            hold-trigger-on-release;             // delay positional check until key-release
+            hold-trigger-on-release;
         };
     };
 
