@@ -144,30 +144,30 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp TAB             &kp Q         &kp W            &kp E            &kp R              &kp T              &kp Y               &kp U              &kp I            &kp O            &kp P            &kp BSPC
-&weak LCTRL ESCAPE  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml F LEFT_SHIFT  &kp G              &kp H               &hmr LEFT_SHIFT J  &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
-&kp LSHFT           &kp Z         &kp X            &kp C            &kp V              &kp B              &kp N               &kp M              &kp COMMA        &kp DOT          &kp FSLH         &mt RSHIFT ENTER
-                                                   &kp LALT         &lt 2 SPACE        &mt LCTRL ENTER    &mt LEFT_GUI ENTER  &mo 1              &kp LALT
+&kp TAB             &kp Q         &kp W            &kp E            &kp R              &kp T                  &kp Y               &kp U              &kp I            &kp O            &kp P            &kp BSPC
+&weak LCTRL ESCAPE  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G                  &kp H               &hmr LEFT_SHIFT J  &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
+&kp LSHFT           &kp Z         &kp X            &kp C            &kp V              &kp B                  &kp N               &kp M              &kp COMMA        &kp DOT          &kp FSLH         &mt RSHIFT ENTER
+                                                   &kp LALT         &lt 2 SPACE        &mt LCTRL BACKSPACE    &mt LEFT_GUI ENTER  &mo 1              &kp LALT
             >;
         };
 
         lower_layer {
             label = "Lower";
             bindings = <
-&kp TAB           &kp N1                    &kp N2   &kp N3        &kp N4          &kp N5       &kp N6              &kp N7       &kp N8     &kp N9     &kp N0            &kp BSPC
-&mt LCTRL ESCAPE  &mt LEFT_GUI PRINTSCREEN  &kp F14  &trans        &trans          &trans       &kp LEFT            &kp DOWN     &kp UP     &kp RIGHT  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP
-&kp LSHFT         &trans                    &trans   &kp C_NEXT    &kp PAGE_DOWN   &kp END      &kp HOME            &kp PAGE_UP  &kp COMMA  &kp DOT    &kp K_MUTE        &mt LSHFT C_VOL_DN
-                                                     &kp LEFT_ALT  &mt LGUI SPACE  &kp LCTRL    &mt LEFT_GUI ENTER  &trans       &kp RALT
+&kp TAB           &kp N1                  &kp N2        &kp N3            &kp N4          &kp N5       &kp N6              &kp N7                &kp N8                  &kp N9               &kp N0                   &kp BSPC
+&mt LCTRL ESCAPE  &hml LCTRL PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans       &kp LEFT            &hmr LEFT_SHIFT DOWN  &hmr LEFT_GUI UP_ARROW  &hmr LEFT_ALT RIGHT  &hmr LCTRL C_PLAY_PAUSE  &kp C_VOLUME_UP
+&kp LSHFT         &trans                  &trans        &kp C_NEXT        &kp PAGE_DOWN   &kp END      &kp HOME            &kp PAGE_UP           &kp COMMA               &kp DOT              &kp K_MUTE               &mt LSHFT C_VOL_DN
+                                                        &kp LEFT_ALT      &kp SPACE       &kp LCTRL    &mt LEFT_GUI ENTER  &trans                &kp RALT
             >;
         };
 
         raise_layer {
             label = "Raise";
             bindings = <
-&kp TILDE         &kp EXCL      &kp AT     &kp HASH   &kp DLLR        &kp PRCNT           &kp CARET          &kp AMPS         &kp KP_MULTIPLY  &kp LPAR        &kp RPAR   &kp BSPC
-&mt LCTRL ESCAPE  &kp LEFT_GUI  &kp GRAVE  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BACKSLASH    &kp MINUS       &kp EQUAL  &kp PIPE
-&kp LSHFT         &trans        &kp SPACE  &mkp MB5   &mkp MCLK       &mkp LCLK           &mkp RCLK          &mkp MCLK        &mkp MB4         &kp UNDERSCORE  &kp PLUS   &kp RIGHT_SHIFT
-                                           &kp LALT   &trans          &mo 3               &mt RGUI ENTER     &kp LCTRL        &kp RALT
+&kp TILDE         &kp EXCL   &kp AT               &kp HASH                 &kp DLLR                    &kp PRCNT           &kp CARET          &kp AMPS                     &kp KP_MULTIPLY          &kp LPAR             &kp RPAR          &kp BSPC
+&mt LCTRL ESCAPE  &kp LCTRL  &hml LEFT_ALT GRAVE  &hml LEFT_COMMAND SLASH  &hml LEFT_SHIFT LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &hmr LEFT_SHIFT RIGHT_BRACE  &hmr LEFT_GUI BACKSLASH  &hmr LEFT_ALT MINUS  &hmr LCTRL EQUAL  &kp PIPE
+&kp LSHFT         &trans     &trans               &mkp MB5                 &mkp MCLK                   &mkp LCLK           &mkp RCLK          &mkp MCLK                    &mkp MB4                 &kp UNDERSCORE       &kp PLUS          &kp RIGHT_SHIFT
+                                                  &kp LALT                 &trans                      &mo 3               &mt RGUI ENTER     &trans                       &kp RALT
             >;
         };
 
