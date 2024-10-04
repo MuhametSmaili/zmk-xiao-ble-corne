@@ -16,9 +16,11 @@
 // adding double tap for layer tap, which makes possible to hold the $kp
 
 &lt {
-    tapping-term-ms = <250>;
-    quick-tap-ms = <180>;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
     flavor = "balanced";
+    hold-trigger-on-release;
+    require-prior-idle-ms = <150>;
 };
 
 / {
