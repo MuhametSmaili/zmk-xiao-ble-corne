@@ -137,6 +137,11 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <19 40>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
@@ -158,7 +163,7 @@
 &kp TAB           &kp N1                  &kp N2        &kp N3            &kp N4          &kp N5     &kp N6    &kp N7                &kp N8                  &kp N9               &kp N0                   &kp BSPC
 &mt LCTRL ESCAPE  &hml LCTRL PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans     &kp LEFT  &hmr LEFT_SHIFT DOWN  &hmr LEFT_GUI UP_ARROW  &hmr LEFT_ALT RIGHT  &hmr LCTRL C_PLAY_PAUSE  &kp C_VOLUME_UP
 &kp LSHFT         &trans                  &trans        &kp C_NEXT        &kp PAGE_DOWN   &kp END    &kp HOME  &kp PAGE_UP           &kp COMMA               &kp DOT              &kp K_MUTE               &mt LSHFT C_VOL_DN
-                                                        &kp LEFT_ALT      &kp SPACE       &trans     &trans    &trans                &kp RALT
+                                                        &trans            &trans          &trans     &trans    &trans                &trans
             >;
         };
 
@@ -168,7 +173,7 @@
 &kp TILDE         &kp EXCL   &kp AT               &kp HASH                 &kp DLLR                    &kp PRCNT           &kp CARET          &kp AMPS                     &kp KP_MULTIPLY          &kp LPAR             &kp RPAR          &kp BSPC
 &mt LCTRL ESCAPE  &kp LCTRL  &hml LEFT_ALT GRAVE  &hml LEFT_COMMAND SLASH  &hml LEFT_SHIFT LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &hmr LEFT_SHIFT RIGHT_BRACE  &hmr LEFT_GUI BACKSLASH  &hmr LEFT_ALT MINUS  &hmr LCTRL EQUAL  &kp PIPE
 &kp LSHFT         &trans     &trans               &trans                   &kp UNDERSCORE              &kp MINUS           &kp PLUS           &trans                       &trans                   &trans               &trans            &kp RIGHT_SHIFT
-                                                  &kp LALT                 &trans                      &mo 3               &mt RGUI ENTER     &trans                       &kp RALT
+                                                  &trans                   &trans                      &mo 3               &trans             &trans                       &trans
             >;
         };
 
