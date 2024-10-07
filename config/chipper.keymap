@@ -16,8 +16,8 @@
 
 &lt {
     tapping-term-ms = <230>;
-    quick-tap-ms = <160>;
-    flavor = "hold-preferred";
+    quick-tap-ms = <165>;
+    flavor = "balanced";
 };
 
 / {
@@ -65,6 +65,16 @@
             flavor = "balanced";
             hold-trigger-key-positions = <37 38 36 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
             hold-trigger-on-release;
+        };
+
+        rthumb: rthumb {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_THUMB";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <150>;
         };
     };
 
@@ -148,10 +158,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&trans              &kp Q         &kp W            &kp E            &kp R              &kp T            &kp Y             &kp U              &kp I            &kp O            &kp P            &trans
-&weak LCTRL ESCAPE  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G            &kp H             &hmr LEFT_SHIFT J  &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
-&trans              &kp Z         &kp X            &kp C            &kp V              &kp B            &kp N             &kp M              &kp COMMA        &kp DOT          &kp FSLH         &trans
-                                                   &kp ESC          &lt 2 SPACE        &mt LCTRL TAB    &mt LSHIFT ENTER  &lt 1 BACKSPACE    &kp LEFT_ALT
+&trans              &kp Q         &kp W            &kp E            &kp R              &kp T            &kp Y             &kp U                &kp I            &kp O            &kp P            &trans
+&weak LCTRL ESCAPE  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G            &kp H             &hmr LEFT_SHIFT J    &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
+&trans              &kp Z         &kp X            &kp C            &kp V              &kp B            &kp N             &kp M                &kp COMMA        &kp DOT          &kp FSLH         &trans
+                                                   &kp ESC          &lt 2 SPACE        &mt LCTRL TAB    &mt LSHIFT ENTER  &rthumb 1 BACKSPACE  &kp LEFT_ALT
             >;
         };
 
