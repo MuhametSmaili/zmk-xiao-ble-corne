@@ -70,7 +70,7 @@
         rthumb: rthumb {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_THUMB";
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
