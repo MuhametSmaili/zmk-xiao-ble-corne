@@ -15,9 +15,9 @@
 // adding double tap for layer tap, which makes possible to hold the $kp
 
 &lt {
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    flavor = "balanced";
+    tapping-term-ms = <230>;
+    quick-tap-ms = <160>;
+    flavor = "hold-preferred";
 };
 
 / {
@@ -158,10 +158,10 @@
         lower_layer {
             label = "Lower";
             bindings = <
-&kp TAB           &kp N1                  &kp N2        &kp N3            &kp N4          &kp N5     &kp N6    &kp N7                &kp N8                  &kp N9               &kp N0                   &kp BSPC
-&mt LCTRL ESCAPE  &hml LCTRL PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans     &kp LEFT  &hmr LEFT_SHIFT DOWN  &hmr LEFT_GUI UP_ARROW  &hmr LEFT_ALT RIGHT  &hmr LCTRL C_PLAY_PAUSE  &kp C_VOLUME_UP
-&kp LSHFT         &trans                  &trans        &kp C_NEXT        &kp PAGE_DOWN   &kp END    &kp HOME  &kp PAGE_UP           &kp COMMA               &kp DOT              &kp K_MUTE               &mt LSHFT C_VOL_DN
-                                                        &trans            &trans          &trans     &trans    &trans                &trans
+&kp TAB           &kp N1                  &kp N2        &kp N3            &kp N4          &kp N5      &kp N6    &kp N7                &kp N8                  &kp N9               &kp N0                   &kp BSPC
+&mt LCTRL ESCAPE  &hml LCTRL PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans      &kp LEFT  &hmr LEFT_SHIFT DOWN  &hmr LEFT_GUI UP_ARROW  &hmr LEFT_ALT RIGHT  &hmr LCTRL C_PLAY_PAUSE  &kp C_VOLUME_UP
+&kp LSHFT         &trans                  &trans        &kp C_NEXT        &kp PAGE_DOWN   &kp HOME    &kp END   &kp PAGE_UP           &kp COMMA               &kp DOT              &kp K_MUTE               &mt LSHFT C_VOL_DN
+                                                        &trans            &trans          &trans      &trans    &trans                &trans
             >;
         };
 
