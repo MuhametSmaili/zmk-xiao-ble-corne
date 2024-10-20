@@ -76,7 +76,7 @@
             tapping-term-ms = <230>;
             quick-tap-ms = <125>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <6 7 8 9 10 1 2 3 4 5 18 19 20 21 13 40>;
+            hold-trigger-key-positions = <6 7 8 9 10 1 2 3 4 5 18 19 20 21 13 40 30 29>;
         };
 
         lthumb: lthumb {
@@ -206,10 +206,10 @@
         raise_layer {
             label = "Raise";
             bindings = <
-&kp TILDE         &kp EXCL  &kp AT               &kp HASH                 &kp DLLR                    &kp PRCNT           &kp CARET          &kp AMPS                     &kp KP_MULTIPLY          &kp LPAR             &kp RPAR          &kp BSPC
-&mt LCTRL ESCAPE  &trans    &hml LEFT_ALT GRAVE  &hml LEFT_COMMAND SLASH  &hml LEFT_SHIFT LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &hmr LEFT_SHIFT RIGHT_BRACE  &hmr LEFT_GUI BACKSLASH  &hmr LEFT_ALT MINUS  &hmr LCTRL EQUAL  &kp PIPE
-&kp LSHFT         &trans    &kp TILDE            &kp UNDER                &kp SINGLE_QUOTE            &kp MINUS           &kp PLUS           &kp DOUBLE_QUOTES            &kp PIPE                 &trans               &trans            &kp RIGHT_SHIFT
-                                                 &trans                   &trans                      &mo 3               &trans             &trans                       &trans
+&kp TILDE         &kp EXCL         &kp AT               &kp HASH                 &kp DLLR                    &kp PRCNT           &kp CARET          &kp AMPS                     &kp KP_MULTIPLY          &kp LPAR             &kp RPAR          &kp BSPC
+&mt LCTRL ESCAPE  &hml LCTRL PIPE  &hml LEFT_ALT GRAVE  &hml LEFT_COMMAND SLASH  &hml LEFT_SHIFT LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &hmr LEFT_SHIFT RIGHT_BRACE  &hmr LEFT_GUI BACKSLASH  &hmr LEFT_ALT EQUAL  &hmr LCTRL COLON  &kp PIPE
+&kp LSHFT         &kp TILDE        &kp LESS_THAN        &kp UNDER                &kp SINGLE_QUOTE            &kp MINUS           &kp PLUS           &kp DOUBLE_QUOTES            &kp MINUS                &kp GREATER_THAN     &kp QUESTION      &kp RIGHT_SHIFT
+                                                        &trans                   &trans                      &mo 3               &trans             &trans                       &trans
             >;
         };
 
