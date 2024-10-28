@@ -129,7 +129,7 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <1 2 3 4>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         equal {
@@ -145,6 +145,12 @@
             bindings = <&caps_word>;
             key-positions = <16 19 15 20>;
             layers = <0>;
+        };
+
+        num_pad_one_hand {
+            bindings = <&tog 4>;
+            key-positions = <26 25 27 28>;
+            layers = <0 4>;
         };
     };
 
@@ -187,6 +193,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_BRIGHTNESS_INC  &trans  &trans  &trans        &trans        &sys_reset
 &trans      &trans        &trans        &trans        &trans        &trans          &kp C_BRIGHTNESS_DEC  &trans  &trans  &out OUT_TOG  &out OUT_BLE  &bt BT_CLR_ALL
                                         &trans        &trans        &trans          &trans                &to 0   &trans
+            >;
+        };
+
+        one_hand_numbers {
+            bindings = <
+&trans  &kp KP_MULTIPLY  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp MINUS          &trans  &trans  &trans  &trans  &trans  &trans
+&tog 0  &kp COMMA        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOT          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY    &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans        &kp SPACE     &kp NUMBER_0       &tog 0  &trans  &trans
             >;
         };
     };
