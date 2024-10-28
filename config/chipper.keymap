@@ -135,15 +135,16 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <8 9>;
+            slow-release;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <40>;
+            layers = <0>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <16 19 15 20>;
             layers = <0>;
-            slow-release;
-            require-prior-idle-ms = <40>;
-            timeout-ms = <35>;
         };
     };
 
